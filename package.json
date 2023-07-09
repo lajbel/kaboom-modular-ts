@@ -1,0 +1,16 @@
+{
+	"name": "kaboom-modular",
+	"scripts": {
+		"build": "esbuild --bundle src/main.ts --outfile=www/main.js --minify",
+		"dev": "esbuild --bundle src/main.ts --outfile=www/main.js --servedir=www",
+		"zip": "npm run build && mkdir -p dist && zip -r dist/game.zip www -x \"**/.DS_Store\"",
+		"check": "tsc"
+	},
+	"dependencies": {
+		"kaboom": "^3000.0.14"
+	},
+	"devDependencies": {
+		"esbuild": "^0.18.11",
+		"typescript": "^5.1.6"
+	}
+}

@@ -10,8 +10,9 @@ k.scene("game", () => {
 
     // Add the player object to screen.
     const player = k.add(makePlayer());
-    
-    makeFloor();
+
+    // Add the floor
+    k.add(makeFloor());
 
     function jump() {
         if (player.isGrounded()) {

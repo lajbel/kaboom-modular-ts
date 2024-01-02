@@ -1,7 +1,7 @@
-import k, { FLOOR_HEIGHT} from "../kaboom";
+import k, { FLOOR_HEIGHT } from "../kaboom";
 
-export function makeFloor() {
-    const floor = k.add([
+export const makeFloor = () => {
+    const floor = k.make([
         k.rect(k.width(), FLOOR_HEIGHT),
         k.outline(4),
         k.pos(0, k.height()),

@@ -1,6 +1,6 @@
 import k, { SPEED, FLOOR_HEIGHT } from "../kaboom";
 
-export function makeTree() {
+export const makeTree = () => {
     const tree = k.add([
         k.rect(48, k.rand(32, 96)),
         k.area(),

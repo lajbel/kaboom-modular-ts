@@ -1,7 +1,7 @@
 import k from "../kaboom";
 
 // Exports a function that creates the player object, but not add it,
-export function makePlayer() {
+export const makePlayer = () => {
     const player = k.make([
         // List of components
         k.sprite("bean"),

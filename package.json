@@ -7,7 +7,7 @@
 		"check": "tsc"
 	},
 	"dependencies": {
-		"kaboom": "^3000.0.14"
+		"kaboom": "^3000.1.17"
 	},
 	"devDependencies": {
 		"esbuild": "^0.18.11",
